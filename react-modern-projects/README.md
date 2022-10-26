@@ -2,6 +2,15 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+### REACT REDUX 
+## Best Practices 
+1. Export both the connected and unconnected component, one for the application and the other for tests. 
+
+## Resume
+Redux Store: holding the state of the application.
+Reducers: they are pure functions that take the previous state of the application, perform an action, and return a new state.
+Redux Actions: defining the different events that can occur in your applications
+
 ## Available Scripts
 
 In the project directory, you can run:
