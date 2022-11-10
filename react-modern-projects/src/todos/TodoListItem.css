@@ -5,6 +5,7 @@
     padding: 16px;
     position: relative;
     box-shadow: 0 4px 8px grey;
+    text-align: left;
 }
 
 .buttons-container {

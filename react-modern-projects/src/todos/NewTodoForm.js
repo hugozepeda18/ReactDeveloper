@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { connect } from 'react-redux' //connect is a higher order function
 import './NewTodoForm.css'
-import { createTodo } from './actions'
+import { addTodoRequest } from './thunks'
 
 const NewTodoForm = ({ todos, onCreatePressed }) => {
     const [inputValue, setInputValue] = useState('')
@@ -35,7 +35,7 @@ const mapStateToProps = state => ({
     //ACCESS TO THE PROPERTIES THE COMPONENT NEEDS
 
 const mapDispatchToProps = dispatch => ({
-    onCreatePressed: text => dispatch(createTodo(text))
+    onCreatePressed: text => dispatch(addTodoRequest(text))
 }) //TRIGGERS ACTIONS OUR REDUX STORE WILL REACT TO
 
 export default connect(mapStateToProps, mapDispatchToProps)(NewTodoForm) //CONNECTS THE COMPONENT TO REDUX STORE
